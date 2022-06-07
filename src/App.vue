@@ -1,26 +1,25 @@
 <template>
+  <!--<router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>-->
   <navbarDesktop></navbarDesktop>
-  <homePart1></homePart1>
-  <!--<img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />-->
+  <router-view />
+  <footerDesktop></footerDesktop>
 </template>
 
 <script>
 import navbarDesktop from "./components/navbarDesktop.vue";
-import homePart1 from "./components/homePart1.vue";
-
+import footerDesktop from "./components/footerDesktop.vue";
 export default {
   name: "App",
   components: {
     navbarDesktop,
-    homePart1,
+    footerDesktop,
   },
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   font-family: "Heebo", sans-serif;
 }
